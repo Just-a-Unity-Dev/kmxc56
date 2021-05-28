@@ -5,9 +5,9 @@ let ipointer = 0;
 let mpointer = 0;
 let astack = [];
 
-let program = "+9;";
+let program = document.getElementById("code").value;
 let input = "";
-let output = "";
+let output = document.getElementById("console").value;
 
 function resetState() {
     memory.fill(0);
