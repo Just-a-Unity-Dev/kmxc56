@@ -1,31 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>kmxc56</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div>
-        <h1>kmxc56</h1>
-        <h2>Home of kmxc56</h2>
-    </div>
-
-    <div>
-        stuff's not working right, check my repo and go to interpreter.js<br>
-        <textarea placeholder="Program goes here..." cols="90" rows="10" id="code"></textarea><br>
-        <input placeholder="Input goes here..." type="text"></input><br>
-        <button class="button1" onclick="interpret()">Evaluate</button>
-        <button class="button1" onclick="resetState()">Reset Console and Cells</button>
-        <br>
-        <textarea disabled="true" cols="90" rows="10" id="console"></textarea><br>
-
-        <h1>Documentation</h1>
-
-        <h1>Examples</h1>
-        <button class="button1" onclick="resetState()">Reset Console and Cells</button>
-        <button class="button1" onclick="interpret()">Evaluate</button>
-    </div>
-</body>
-<script src="interpreter.js"></script>
+	<head>
+		<meta charset="UTF-8">
+		<title>kmxc56</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div>
+			<h1>kmxc56</h1>
+			<h2>Home of kmxc56</h2>
+		</div>
+		<div>
+			<textarea placeholder="Program goes here..." cols="90" rows="10" id="code"></textarea><br>
+			<input placeholder="Input goes here..." type="text" id="insert"></input><br>
+			<button class="button1" onclick="interpret()">Evaluate</button>
+			<button class="button1" onclick="resetState()">Reset Interpreter</button><br>
+			<textarea disabled="true" cols="90" rows="10" id="console"></textarea><br>
+			<h1>Documentation</h1>
+			<h1>Examples</h1>
+			<button class="button1" onclick="interpret()">Evaluate</button>
+			<button class="button1" onclick="resetState()">Reset Interpreter</button>
+		</div>
+	<script src="interpreter.js"></script>
+	</body>
 </html>
