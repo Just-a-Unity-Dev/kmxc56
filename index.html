@@ -1,19 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <title>kmxc56</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>kmxc56</h1>
-<h2>a kmxc56 interpreter</h2>
     <div>
-        <textarea id="code"></textarea>
+        <h1>kmxc56</h1>
+        <h2>Home of kmxc56</h2>
     </div>
-<button onclick="evaluate(document.getElementById('code'))">Evaluate</button>
+
+    <div>
+        stuff's not working right, check my repo and go to interpreter.js
+        <textarea placeholder="Program goes here..." cols="90" rows="10" id="code_old"></textarea><br>
+        <input placeholder="Input goes here..." type="text"></input><br>
+        <button class="button1" onclick="interpret()">Evaluate</button>
+        <button class="button1" onclick="resetState()">Reset Console and Cells</button>
+        <br>
+        <textarea disabled="true" cols="90" rows="10" id="console"></textarea><br>
+
+        <h1>Documentation</h1>
+
+        <h1>Examples</h1>
+        <button class="button1" onclick="resetState()">Reset Console and Cells</button>
+        <button class="button1" onclick="interpret()">Evaluate</button>
+    </div>
 </body>
-
-<script src="script.js"></script>
-
+<script src="interpreter.js"></script>
 </html>
