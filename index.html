@@ -1,26 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>kmxc56</title>
-		<link rel="stylesheet" href="style.css">
-	</head>
-	<body>
-		<div>
-			<h1>kmxc56</h1>
-			<h2>Home of kmxc56</h2>
-		</div>
-		<div>
-			<textarea placeholder="Program goes here..." cols="90" rows="10" id="code"></textarea><br>
-			<input placeholder="Input goes here..." type="text" id="insert"></input><br>
-			<button class="button1" onclick="interpret()">Evaluate</button>
-			<button class="button1" onclick="resetState()">Reset Interpreter</button><br>
-			<textarea disabled="true" cols="90" rows="10" id="console"></textarea><br>
-			<h1>Documentation</h1>
-			<h1>Examples</h1>
-			<button class="button1" onclick="interpret()">Evaluate</button>
-			<button class="button1" onclick="resetState()">Reset Interpreter</button>
-		</div>
-	<script src="interpreter.js"></script>
-	</body>
+<head>
+    <meta charset="UTF-8">
+    <title>kmxc56</title>
+    <link rel="stylesheet" href="css/interpreter.css">
+</head>
+<body>
+<noscript>
+    Hey hey! What the heck are you doing!<br>
+    Javascript is required to run kmxc56!<br>
+    Please enable Javascript to run kmxc56! Please!
+    <style>
+        #ddown {display:none;}
+    </style>
+</noscript>
+<div>
+    <h1>kmxc56</h1>
+    <h2>Home of kmxc56</h2>
+</div>
+<div>
+    <textarea placeholder="Program goes here..." cols="90" rows="10" id="code"></textarea><br>
+    <input placeholder="Input goes here..." type="text" id="insert"></input><br>
+    <button class="button1" onclick="interpret()">Evaluate</button>
+    <button class="button1" onclick="resetState()">Reset Interpreter</button><br>
+    <textarea disabled="true" cols="90" rows="10" id="console"></textarea><br>
+    <h1>
+        Links
+    </h1>
+    <a href="https://github.com/Just-a-Unity-Dev/kmxc56/blob/master/README.md">
+        <button class="button2">Read Me</button>
+    </a><br>
+    <a href="https://github.com/Just-a-Unity-Dev/kmxc56/">
+        <button class="button2">Github</button>
+    </a>
+    <h1>Examples</h1>
+    <button class="button2" onclick="setTo('helloworld')">Hello, World!</button>
+    <button class="button2" onclick="setTo('adder')">Adder</button><br>
+    <button class="button2" onclick="setTo('multiplier')">Multiplier</button>
+    <button class="button2" onclick="setTo('asciitoDec')">ASCII to Dec</button>
+
+</div>
+<script src="js/interpreter.js"></script>
+</body>
 </html>

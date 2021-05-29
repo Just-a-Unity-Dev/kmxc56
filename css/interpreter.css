@@ -51,6 +51,21 @@ h1:after
     opacity: 1; /* Firefox */
 }
 
+.button2 {
+    background-color: #505050;
+    text-align: center;
+    color: black;
+    margin: 4px 4px;
+    font-size: 16px;
+    border-radius: 4px;
+    font-family: 'Source Code Pro', monospace;
+    border: 2px solid #a0a0a0;
+    color: rgba(255, 255, 255, 1);
+    transition-duration: 0.4s;
+    height: 100px;
+    width: 100px;
+}
+
 input{
     background-color: #202224;
     font-family: 'Source Code Pro', monospace;
@@ -58,6 +73,11 @@ input{
 }
 
 .button1:hover{
+    background-color: #8b8b8b; /* Green */
+    color: #ffffff;
+}
+
+.button2:hover{
     background-color: #8b8b8b; /* Green */
     color: #ffffff;
 }
